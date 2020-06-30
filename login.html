@@ -1,24 +1,21 @@
 <html>
-<head>
+	<head>
+		<title>login form</title>
+	</head>
+	<body>	
+		<!-- Name Id appropriately , Cause Other Developers need to understand your code-->
+		<form id="login_form">
+			<b>USER NAME:</b><input type="text" id="username" /><br><br>    
+			<b>PASSWORD:</b><input type="password" id="password"/></br><br>
+			<button onclick="myFunction()">LOGIN</button>
+		</form>
+		
+		<script>
+			function myFunction() {
+				var data = "User Name: "+document.getElementById("username").value+"\n;
+				alert(data);
+			}
+		</script>
 
-<title>login form</title>
-</head>
-<body>
-
-</form>
-<form id="y">
-<b>USER NAME:</b><input type="text" /><br><br>
-<b>PASSWORD:</b><input type="password"/></br><br>
-<input type="submit" value="LOGIN"/>
-</form>
-
-
-
-
-
-
-
-
-
-</body>
+	</body>
 </html>
